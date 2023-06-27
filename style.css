@@ -1,0 +1,756 @@
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sha:hover {
+    visibility: visible;
+}
+
+#asdd:hover {
+    visibility: visible;
+    background-color: aqua;
+}
+
+/* sm device nav  ///////////////////////*/
+.smdevice_nav .smmenu,
+.smsearch,
+.smprofile,
+.smcart {
+    font-size: 30px;
+    border-right: solid 2px silver;
+}
+.smdevice_nav{
+    height:70px
+}
+.profileExpand ,.searchExpand,.cartExpand{
+    display:none
+}
+/* headder side bar//////////////////////////////////////////////////////////////////////////////////////// */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 500;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+
+/* headder///////////////////////////////////////// */
+.headder>* {
+    font-size: 0.75rem;
+}
+
+.profileDropDown .dropdown-menu {
+    border: none;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 1px silver;
+
+}
+
+.badge {
+    background-color: #F0F0F0;
+}
+
+
+
+
+.cartItemNumber {
+    background-color: #F0F0F0;
+    text-align: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px
+}
+
+.cartItemNumber:hover {
+    background-color: black;
+    color: white;
+}
+
+.badge {
+    background-color: #dfdede;
+}
+
+.carttext {
+    font-size: 0.75rem;
+    padding-top: 24px;
+}
+
+/*menu//////////////////////////////////////////////// /////////// */
+
+.menu {
+    height: 60px;
+    background-color: black;
+}
+
+.menu .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.menu .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.menu .btn {
+    color: #8594A0;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+    height: 60px;
+
+
+}
+
+.menu .col-md-2 {
+    padding: 0px;
+}
+
+.menu .btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    margin: 0px;
+}
+
+.menu .btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes bottomToTopp {
+    0% {
+        top: 50px
+    }
+
+    100% {
+        top: 40px;
+    }
+}
+
+.menu .dropdown-menu {
+    border-radius: 0%;
+
+    animation: bottomToTopp 0.25s ease-out;
+    width: 200px;
+    font-size: smaller;
+
+
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu .dropdown button {
+    font-size: 11px;
+
+}
+
+.megadropdown .dropdown-menu {
+    width: 830%;
+    left: -200%;
+
+}
+
+.mega_col {
+    border-right: solid 1px silver;
+
+}
+
+.mega_col img {
+    padding-bottom: 10px;
+}
+
+.badge:hover {
+    background-color: black;
+    color: white;
+}
+
+#searchh {
+    color: white;
+    width: 33%;
+}
+
+#searchh .hidden_searchbar {
+    background-color: aliceblue;
+    color: black;
+    width: 93%;
+    height: 30px;
+
+}
+
+
+
+/* carousal////////////////////////////////////////////////////////// */
+.carousel .carousel-control-prev {
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev {
+    visibility: visible;
+}
+
+.carousel .carousel-control-next {
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next {
+    visibility: visible;
+}
+
+.carousel-indicators .carousalbottom {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 4px solid transparent
+}
+
+.carousel-indicators .active {
+    background-color: rgb(216, 213, 213);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 4px solid silver
+}
+
+
+@keyframes movingTopToBottom {
+    0% {
+        top: -300px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        left: -300px
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        right: -300px
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes bottomToTop {
+    0% {
+        bottom: -300px
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.text1 {
+    animation: movingTopToBottom 1.5s ease-in;
+    position: relative;
+
+}
+
+.smcarousalcaption .text1 {
+    font-size: 0.5rem;
+
+}
+
+.smcarousalcaption .text2 {
+    font-size: 0.8rem;
+
+}
+
+.smcarousalcaption .text3 {
+    font-size: 0.8rem;
+
+}
+
+.smcarousalcaption button {
+    height: 1.5rem;
+    font-size: 0.5rem;
+}
+
+
+.text2 {
+    animation: leftToRight 1.5s ease-in;
+    position: relative;
+
+
+}
+
+.text3 {
+    animation: rightToLeft 1s ease-in;
+    position: relative;
+
+}
+
+.carousel-caption button {
+    animation: bottomToTop 1s ease-in;
+    position: relative;
+
+
+}
+
+.carousel-caption {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.corousel-caption div {
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.carousel-caption button {
+    background-color: red;
+    color: white;
+    font-size: x-small;
+    border: none;
+
+
+}
+
+.carousel-caption button:hover {
+    background-color: black;
+}
+
+.slide2 div {
+    color: black;
+}
+
+.carousalbtn {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px soild transparent;
+
+}
+
+.carousalbtn:hover {
+
+    border: 5px solid silver;
+}
+.colb{
+    color: black;
+}
+/* grid catogory //////////////////////////////*/
+.gri1{
+    background-image: url(images/grid1.jpg);
+}
+.gri2{
+    background-image: url(images/grid2.jpg);
+}
+.gri3{
+    background-image: url(images/grid3.jpg);
+}
+.gri4{
+    background-image: url(images/grid4.jpg);
+}
+.gri5{
+    background-image: url(images/grid5.jpg);
+}
+.gri6{
+    background-image: url(images/grid6.jpg);
+}
+.gri7{
+    background-image: url(images/grid7.jpg);
+}
+.gri8{
+    background-image: url(images/grid8.jpg);
+}
+
+
+
+
+/* top tag /////////////////////////////////*/
+.toptag {
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.add_to_cart {
+    background-color: black;
+    color: white;
+    padding: 13px;
+    width: 55%;
+}
+
+.add_to_cart:hover {
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    padding: 8px;
+}
+
+.lowprice {
+    color: #8594A0;
+}
+
+.stars {
+    color: gold;
+}
+
+/* special product */
+.sptag {
+    width: 40px;
+    height: 2px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.out_of_stock {
+    color: red;
+}
+
+.sp_new_price {
+    color: red
+}
+
+.sp_old_price {
+    color: rgb(165, 165, 165)
+}
+
+/* newsletter ///////////////////////////////////////////*/
+#newsletter {
+    background-color: #EE221D;
+
+
+}
+
+#inputt {
+    height: 50px;
+    width: 200px;
+    border: white 1px solid;
+    border-radius: 0%;
+    display: inline;
+
+}
+
+.btn {
+    border: white 1px solid;
+    border-radius: 0%;
+}
+
+input {
+    background-color: aliceblue;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+#mailinput {
+    border: 5px solid #EE221D;
+}
+
+
+
+.btn:hover {
+    background-color: black;
+    color: white;
+
+}
+.subbtn{
+    border: 2px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+/* catogoroes //////////////////////////////////////////*/
+.categorytext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+   
+}
+
+#categories>.row>* {
+    padding-right: 0px !important;
+    margin: 0px !important;
+    padding-left: 0px !important;
+    color: white;
+}
+
+.hiddenn {
+    position: relative;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    color: white;
+    transition: 0.25s;
+
+}
+.hiddenn img{
+     visibility: hidden;
+}
+
+
+.hiddenn div {
+    position: absolute;
+    top: 20px;
+    padding: 15px;
+}
+
+.hiddenn div a {
+    color: white;
+}
+
+.hiddenn:hover {
+    box-shadow: 0px 0px 0px 10px inset rgba(0, 0, 0, 0.5)
+}
+
+.categorybutton {
+    color: white;
+    border: white 2px solid;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.categorybutton:hover {
+    background-color: silver;
+    border: none;
+    border: silver 2px solid;
+}
+.cat1{
+    
+     background-image: url(images/cat1.webp);
+}
+.cat2{
+    
+     background-image: url(images/cat2.jpg);
+}
+.cat3{
+    
+     background-image: url(images/cat3.jpg);
+}
+.cat3 h1{
+    color: red;
+}
+
+div[style=" background-image: url(images/cat3.jpg);"] div button {
+    background-color: black;
+    color: white;
+    border: solid 2px black;
+
+
+}
+
+div[style=" background-image: url(images/cat3.jpg);"] div button:hover {
+    background-color: transparent;
+    color: black;
+    border: solid 2px black
+}
+
+
+
+
+/* footer ////////////////////////////////////////////////*/
+.footer_company_info_links>.footer_links>ul>li>a {
+    color: rgb(145, 143, 143);
+}
+
+.socialmedia_icon {
+    padding: 10px;
+    padding-top: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px silver;
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    color: rgb(131, 130, 130);
+
+}
+
+.socialmedia_icon:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footertext {
+    font-size: smaller;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+/* multi item carousal //////////////////////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////owl carousal */
+
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 81px;
+}
+
+.staff-list .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -46px;
+}
+
+.staff-desc {
+    margin-top: 20px;
+}
+
+.owl-next {
+    background-color: #111;
+}
+
+.multibutton {
+    background-color: white;
+    border: #d1cece 1px solid;
+    color: black;
+}
+
+.multibutton:hover {
+    background-color: black;
+    color: white;
+    border: black 1px solid;
+}
+
+
+.footer-link ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-link ul li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.footer-link li:before {
+    content: ">";
+    padding-right: 5px;
+}
+.owl1{
+    background-image: url(images/multicarousal1.jpg);
+
+}
+.owl2{
+    background-image: url(images/multicaurosal2.jpg);
+}
+.owl3{
+    background-image: url(images/multicaurosal3.jpg);
+
+}
+.owl4{
+    background-image: url(images/multicarousal4.jpg);
+
+}
+.owl5{
+    background-image: url(images/multicarousal5.jpg);
+
+}

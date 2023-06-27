@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- bootstrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- owl -->
+  <script src="@@path/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!-- fontawsome -->
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Montserrat:wght@500&family=Noto+Sans:ital@0;1&family=Nunito+Sans:ital@0;1&display=swap"
+    rel="stylesheet">
+  <script src="script.js"></script>
+  <!-- /////////////////////////////owlowlowl -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+  <!--sm device navbar start -->
+  <div class="smdevice_nav container-flex  d-flex shadow bottom d-block d-sm-none">
+    <div class="my-3 d-flex">
+      <div class="smmenu   px-3">
+        <i class="bi bi-list " onclick="openNav()"></i>
+      </div>
+      <div class="smsearch  px-3">
+        <i class="bi bi-search" onclick="openSearch()"></i>
+      </div>
+      <div class="smprofile  px-3">
+        <i class="bi bi-person" onclick="openProfile()"></i>
+      </div>
+      <div class="smcart  px-3">
+        <i class="bi bi-cart" onclick="openCart()"></i>
+      </div>
+    </div>
+  </div>
+  <!-- openProfile -->
+  <div id="profileExpand" class="profileExpand p-4">
+    <a href="#"><i class="bi bi-person fs-5 p-2"></i>My Accounts</a><br>
+    <a href="#"><i class="bi bi-heart fs-5 p-2"></i>MY WISHLIST</a><br>
+    <a href="#"><i class="bi bi-person-x fs-5 p-2"></i>CREATE ACCOUNT</a><br>
+  </div>
+  <!-- openSearch -->
+  <div id="searchExpand" class="searchExpand p-4">
+    <input type="text" class="border-0" placeholder="search here">
+  </div>
+  <!-- openCart -->
+  <div id="cartExpand" class="cartExpand p-4">
+    you have notting listed
+  </div>
+  <!-- openNav -->
+  <div id="mySidebar" class="sidebar">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            INTERIOR
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+
+            <i class="bi bi-chevron-right"></i><span>Tailored car Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Floor & Cargo Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Storage & Organization</span><br>
+            <i class="bi bi-chevron-right"></i><span>Steering Wheel Covers</span><br>
+            <i class="bi bi-chevron-right"></i><span>Car Seat Covers</span><br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            EXTERIOR
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <i class="bi bi-chevron-right"></i><span>Tailored car Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Floor & Cargo Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Storage & Organization</span><br>
+            <i class="bi bi-chevron-right"></i><span>Steering Wheel Covers</span><br>
+            <i class="bi bi-chevron-right"></i><span>Car Seat Covers</span><br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            LIGHTING
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <i class="bi bi-chevron-right"></i><span>Tailored car Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Floor & Cargo Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Storage & Organization</span><br>
+            <i class="bi bi-chevron-right"></i><span>Steering Wheel Covers</span><br>
+            <i class="bi bi-chevron-right"></i><span>Car Seat Covers</span><br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingfour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+            REPAIR PARTS
+          </button>
+        </h2>
+        <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <i class="bi bi-chevron-right"></i><span>Tailored car Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Floor & Cargo Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Storage & Organization</span><br>
+            <i class="bi bi-chevron-right"></i><span>Steering Wheel Covers</span><br>
+            <i class="bi bi-chevron-right"></i><span>Car Seat Covers</span><br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingfive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+            BODY PARTS
+          </button>
+        </h2>
+        <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <i class="bi bi-chevron-right"></i><span>Tailored car Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Floor & Cargo Mats</span><br>
+            <i class="bi bi-chevron-right"></i><span>Storage & Organization</span><br>
+            <i class="bi bi-chevron-right"></i><span>Steering Wheel Covers</span><br>
+            <i class="bi bi-chevron-right"></i><span>Car Seat Covers</span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sm device navbar ends  -->
+
+  <!-- headder start////////////////////////////////////////////////////// -->
+  <div class="headder ">
+    <div class="conatainer mx-4">
+      <div class="topheadder d-none d-sm-flex justify-content-between m-1">
+        <div class="message pt-2 text-muted">
+          welcome to the website!
+        </div>
+        <!-- md device colapsed profile icon -->
+        <div class="profileDropDown d-block d-md-none">
+          <div class="dropdown ">
+
+            <button class="dropdown-hover p-2" type="button" id="profileDropDown_dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i onclick="profileToggle()" class=" tpicon bi bi-person fs-6"></i>
+            </button>
+            <div class="dropdown-menu px-2  " aria-labelledby="profileDropDown_dropdownMenuButton1">
+              <div class="mx-2 ">
+                <div class="myaccount">
+                  <a href="#">
+                    <i class="bi bi-person fs-6"></i>
+                    My Accounts
+                  </a>
+
+
+                </div>
+                <div class="wishlist">
+                  <a href="#">
+                    <i class="bi bi-heart fs-6"></i>
+                    MY WISHLIST
+                  </a>
+
+                </div>
+                <div class="signin">
+                  <a href="#">
+                    <i class="bi bi-person-fill-lock fs-6"></i>
+                    SIGNIN
+                  </a>
+
+
+                </div>
+                <div class="create">
+                  <a href="#">
+                    <i class="bi bi-person-x fs-6"></i>
+                    CREATE ACCOUNT
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- expanded profile bar -->
+        <div class="profileIconSection d-flex pt-2 grid gap-3 d-none d-md-flex">
+          <div class="myaccount">
+            <a href="#" class=" text-muted"><i class="bi bi-person fs-5"></i>
+              My Accountt
+            </a>
+
+
+          </div>
+          <div class="wishlist">
+            <a href="#" class=" text-muted">
+              <i class="bi bi-heart fs-5"></i>
+              My Wishlist
+            </a>
+
+          </div>
+          <div class="signin">
+            <a href="#" class=" text-muted">
+              <i class="bi bi-person-x fs-5"></i>
+              Signin
+            </a>
+
+
+          </div>
+          <div class="create">
+            <a href="#" class=" text-muted">
+              <i class="bi bi-person-x fs-5"></i>
+              Create Account
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+      <hr class="mt-0 ">
+      <!-- bottom headder -->
+      <div class="bottomheadder d-flex justify-content-between py-3">
+        <div class="logo ">
+          <img src="images/logo_4.webp" alt="">
+        </div>
+        <div class="cart d-none d-sm-flex fs-6">
+          <div>
+            <i class="bi bi-cart p-2 fs-5 "></i>
+            <span class="carttext text-muted">MY CART</span>
+            <span class="badge  rounded-circle">0</span>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- headder end -->
+
+  <!-- menu//////////////////////////////////////////////////////// -->
+
+  <div class="menu  d-none d-sm-block d-lg-block  ">
+    <div class="container-flex d-flex justify-content-between position-relative px-3">
+      <div class="dropdown ">
+        <button class="btn dropdown-hover fs-6" type="button" id="menu_dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          INTERIOR<i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu px-2  " aria-labelledby="menu_dropdownMenuButton1">
+          <div class="mx-2">
+            <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+          </div>
+
+        </div>
+      </div>
+      <div class="dropdown ">
+        <button class="btn dropdown-hover fs-6" type="button" id="menu_dropdownMenuButton2" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          EXTERIOUR<i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu px-2  " aria-labelledby="menu_dropdownMenuButton2">
+          <div class="mx-2">
+            <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+          </div>
+
+        </div>
+      </div>
+      <div class="dropdown megadropdown">
+        <button class="btn dropdown-hover fs-6" type="button" id="menu_dropdownMenuButton3" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          LIGHTING<i class="bi bi-chevron-down"></i>
+        </button>
+
+        <div class="dropdown-menu" aria-labelledby="menu_dropdownMenuButton3">
+          <div class="row ms-3">
+            <div class="col-3 col-md-3">
+              <div class="mega_col my-3 p-3 ps-0">
+                <img src="images/mega1.jpg" alt="" class="w-100">
+                <h6>BODY PARTS</h6>
+                <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="mega_col my-3 p-3 ps-0 ">
+                <img src="images/mega2.jpg" alt="" class="w-100">
+                <h6>SUSPENSION PARTS</h6>
+                <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+              </div>
+
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="mega_col my-3 p-3 ps-0 ">
+                <img src="images/mega3.jpg" alt="" class="w-100">
+                <h6>BREAK PARTS</h6>
+                <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+              </div>
+            </div>
+
+            <div class="col-3 col-md-3">
+              <div class="mega_col my-3 p-3 ps-0 border-0 ">
+                <img src="images/mega4.jpg" alt="" class="w-100">
+                <h6>TRANSMISSIONS PARTS</h6>
+                <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+                <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown ">
+        <button class="btn dropdown-hover fs-6" type="button" id="menu_dropdownMenuButton4" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          REPAIR PARTS<i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu px-2  " aria-labelledby="menu_dropdownMenuButton4">
+          <div class="mx-2">
+            <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown ">
+        <button class="btn dropdown-hover fs-6" type="button" id="menu_dropdownMenuButton5" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          BODY PARTS<i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu px-2  " aria-labelledby="menu_dropdownMenuButton5">
+          <div class="mx-2">
+            <i class="bi bi-chevron-right"></i><a href="#">Tailored car Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Floor & Cargo Mats</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Storage & Organization</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Steering Wheel Covers</a><br>
+            <i class="bi bi-chevron-right"></i><a href="#">Car Seat Covers</a><br>
+          </div>
+
+        </div>
+      </div>
+      <div class="dropdown ">
+        <button class="btn dropdown-hover fs-6">
+          blog
+        </button>
+
+      </div>
+
+
+      <div id="searchh" class="search d-inline  text-end pt-2 ">
+        <div class="mt-1">
+          <i onclick="fun() " class="bi bi-search"></i>
+        </div>
+        <div class="hidden_searchbar position-absolute top-0 start-0 mt-1 d-none justify-content-end text-align-end">
+          <input type="email" placeholder="search entire store here " class="w-100 py-2 border-0">
+          <i class="bi bi-x-circle "></i>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-- carousal /////////////////////////////////////////////////// -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+        class=" carousalbottom active" aria-current="true" aria-label="Slide 1">1</button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class=" carousalbottom "
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class=" carousalbottom "
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-end p-5 align-item-center">
+          <p class="text1 ">THE QUALITY IS BEYOND EXCELENCE</p>
+          <p class="text2 m-0 display-5">BUY THRUSTWORTHY</p>
+          <p class="text3 m-0 fw-lighter  display-5">CAR PARTS</p>
+          <button class="p-3 px-4 mt-4">SHOP NOW</button>
+        </div>
+        <div class="smcarousalcaption carousel-caption d-block d-md-none text-end p-2 align-item-center">
+          <p class="text1 ">THE QUALITY IS BEYOND EXCELENCE</p>
+          <p class="text2 m-0 display-5">BUY THRUSTWORTHY</p>
+          <p class="text3 m-0 fw-lighter  display-5">CAR PARTS</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+      <div class="carousel-item slide2">
+        <img src="images/slide_2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-end p-5 align-item-center">
+          <p class="text1 ">BUY TRUSTWORTHY CAR</p>
+          <p class="text2  m-0 display-5">TURBO CHARGE &</p>
+          <p class="text3 fw-lighter m-0 display-5">COMPONENTS</p>
+          <button class="p-3 px-4 mt-4">SHOP NOW</button>
+        </div>
+        <div class="smcarousalcaption carousel-caption d-block d-md-none text-end p-2 align-item-center">
+          <p class="text1 ">BUY TRUSTWORTHY CAR</p>
+          <p class="text2  m-0 display-5">TURBO CHARGE &</p>
+          <p class="text3 fw-lighter m-0 display-5">COMPONENTS</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-end p-5 align-item-center">
+          <p class="text1 ">AUTO BODY PARTS AND RESTORATION</p>
+          <p class="text2  fw-bolder m-0  display-5">HIGH QUALITY</p>
+          <p class="text3 fw-lighter m-0 display-5">PRODUCTS</p>
+          <button class="p-3 px-4 mt-4">SHOP NOW</button>
+        </div>
+        <div class=" smcarousalcaption carousel-caption d-block d-md-none text-end p-2 align-item-center">
+          <p class="text1 ">AUTO BODY PARTS AND RESTORATION</p>
+          <p class="text2  fw-bolder m-0  display-5">HIGH QUALITY</p>
+          <p class="text3 fw-lighter m-0 display-5">PRODUCTS</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev ms-5" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev">
+      <span class="colb carousel-control-prev-icon " aria-hidden="true">
+        <span class="carousalbtn">
+          <i class="bi bi-chevron-left fs-3"></i>
+        </span>
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next me-5" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next">
+      <span class="colb carousel-control-next-icon " aria-hidden="true">
+        <span class="  carousalbtn">
+          <i class="bi bi-chevron-right fs-3"></i>
+        </span>
+      </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- grid category///////////////////////////////////////////// -->
+  <div class="row gx-0 ">
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri1 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">ENGINE</span><br>
+          <span class="h4">PARTS</span><br><br>
+          <span><a href="#">engine Assembly ,</a><a href="#">Engline block</a></span>
+
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+
+
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri2 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">SUSPENSION</span><br>
+          <span class="h4">PARTS</span><br><br>
+          <span><a href="#">Shocks & Struts</a>,<a href="#">Air Suspension</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri2 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">BRAKE</span><br>
+          <span class="h4">PARTS</span><br><br>
+          <span><a href="#">Brake Kits</a>,<a href="#">Rotors</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri3 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">EXHAUST</span><br>
+          <span class="h4">PARTS</span><br><br>
+          <span><a href="#">Catalytics</a>,<a href="#">Mufflers</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri4 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">STEERING</span><br>
+          <span class="h4">PARTS</span><br><br>
+          <span><a href="#">Racks</a>,<a href="#">Pumps</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri5 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">TRANSMISSION</span><br>
+          <span class="h4">PARTS</span><br><br>
+          <span><a href="#">Transmission</a>,<a href="#">AssembliesClutch Kits</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri6 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">BODY</span><br>
+          <span class="h4">KITS</span><br><br>
+          <span><a href="#">Ground Effects</a>,<a href="#">Side Skirts</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="gri7 hiddenn w-100">
+        <div>
+          <span class="h3 fw-bolder">MOTOR</span><br>
+          <span class="h4">OIL</span><br><br>
+          <span><a href="#">Brake Fluids</a>,<a href="#">Motor Oil</a></span>
+        </div>
+        <img src="images/grid1.jpg" alt="" class="w-100">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- top rataed//////////////////////////////////////////////// -->
+  <div id="toprated" class=" container-fluid p-4">
+    <div class="toprated_title h1 text-center py-5 h2 fw-bolder">
+      Top Rated
+    </div>
+    <div class="toprated_elements row g-4 ">
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative ">
+
+        <img src="images/top1.webp" alt="top1" class="w-100 ">
+        <div class="toptag position-absolute fixed-top fw-lighter">Top</div>
+        <div class="lowprice ">As Low as <span class="lowprice_amount  d-inline fs-4 fw-lighter ">$120.00</span></div>
+        <p class="fw-lighter">portseat Set LAs Vegas Artif..</p>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i> ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative">
+
+        <img src="images/top2.webp" alt="top1" class="min-w-400px w-100 ">
+        <div class="toptag position-absolute fixed-top">Top</div>
+        <div class="lowprice  m">As Low as <span class="lowprice_amount fs-4 d-inline">$120.00</span></div>
+        <p class="fw-lighter">portseat Set LAs Vegas Artif..</p>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i>ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative">
+
+        <img src="images/top3.webp" alt="top1" class="w-100">
+        <div class="toptag position-absolute fixed-top">Top</div>
+        <div class="lowprice  m">As Low as <span class="lowprice_amount fs-4 d-inline">$120.00</span></div>
+        <p class="fw-lighter">portseat Set LAs Vegas Artif..</p>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i> ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart  me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative">
+
+        <img src="images/top4.webp" alt="top1" class="w-100">
+        <div class="toptag position-absolute fixed-top">Top</div>
+        <div class="lowprice  m">As Low as <span class="lowprice_amount fs-4 d-inline">$120.00</span></div>
+        <p class="fw-lighter">portseat Set LAs Vegas Artif..</p>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i> ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline "><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i><i class="bi bi-calculator"></i>
+
+      </div>
+
+      <hr class="my-5">
+    </div>
+
+
+  </div>
+  <!-- special product///////////////////////////////////////////////////////////////// -->
+  <div id="specialproduct" class=" container-fluid p-4 ">
+    <div class="specialproduct_title h2 text-sm-center p-4 text-start fs-sm-5">
+      Special Products
+    </div>
+    <br>
+    <div class="specialproduct row  g-4">
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative ">
+
+        <img src="images/sp1.webp" alt="sp1" class="w-100 ">
+        <div class="sptag position-absolute fixed-top">sale</div>
+        <div class="sp_new_price h3 pe-3 d-inline">$30.00</div>
+        <div class="sp_old_price h6 text-decoration-line-through d-inline">$36.00 </div>
+        <div class=" py-2">
+          <p> Air Intake Hose for Toyota C..</p>
+        </div>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i> ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative ">
+
+        <img src="images/sp2.webp" alt="sp1" class="w-100 ">
+        <div class="sptag position-absolute fixed-top">sale</div>
+        <div class="sp_new_price h3 pe-3 d-inline">$23.00</div>
+        <div class="sp_old_price h6 text-decoration-line-through d-inline">$29.00 </div>
+        <div class=" py-2">
+          <p> NOCO Genius Boost 12V UltraS..</p>
+        </div>
+        <div class="out_of_stock ">
+          OUT OF STOCK
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative ">
+
+        <img src="images/sp3.webp" alt="sp1" class="w-100 ">
+        <div class="sptag position-absolute fixed-top">sale</div>
+        <div class="sp_new_price h3 pe-3 d-inline">$6.00</div>
+        <div class="sp_old_price h6 text-decoration-line-through d-inline">$8.00 </div>
+        <div class=" py-2">
+          <p>Sport Shock Absorber High Te...</p>
+        </div>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i>ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-12 position-relative ">
+
+        <img src="images/sp4.webp" alt="sp1" class="w-100 ">
+        <div class="sptag position-absolute fixed-top">sale</div>
+        <div class="sp_new_price h3 pe-3 d-inline">$105.00</div>
+        <div class="sp_old_price h6 text-decoration-line-through d-inline">$120.00 </div>
+        <div class=" py-2">
+          <p>Sport Air Filter Replacement...</p>
+        </div>
+        <div class="add_to_cart ">
+          <i class="bi bi-cart2 py-5 fs-5"> </i> ADD TO CART
+
+        </div>
+        <div class="rating">
+          <div class="stars d-inline py-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <a href="#" class="text-align p-2">2 Reviews</a>
+
+
+        </div>
+        <i class="bi bi-heart me-5"></i> <i class="bi bi-calculator"></i>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+  <!-- categories /////////////////////////////////////-->
+  <div id="categories" class="container-fluid my-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class=" cat1 hiddenn w-100 position-relative card">
+          <img src="images/cat1.webp" alt="" class="w-100">
+          <div class="categorytext  position-absolute text-start top-50 start-50 translate-middle" >
+            <h2>Suspenstion</h2>
+            <h5>PARTS</h5>
+            <h2>20% off</h2>
+            <button class="categorybutton p-3">SHOP NOW</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="cat2 hiddenn w-100 position-relative card d-flex align-item-center justify-content-center "
+         >
+          <img src="images/cat2.jpg" alt="" class="w-100" >
+          <div class=" categorytext position-absolute text-center top-50 start-50 translate-middle"
+            >
+            <h2 class="mx-5 mt-5 font-weight-bold ">AUTO</h2>
+            <h2>LIGHTING</h2>
+            <button class=" categorybutton p-3  " >SHOP NOW</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class=" cat3 hiddenn w-100 position-relative card" >
+          <img src="images/cat3.jpg" alt="" class="w-100">
+          <div class="categorytext position-absolute text-start top-50 start-50 translate-middle"
+            >
+            <h2>CAR</h2>
+            <h3>SPOILERS</h3>
+            <h1 >50% off</h1>
+            <button class="categorybutton p-3">SHOP NOW</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- category end -->
+  <!-- multi item carousal -->
+  <div class="section-padding">
+    <div class="container-flex p-4">
+      <div class="specialproduct_title h2 text-center p-4">
+        From The Blog
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel staff-list">
+            <div class="single-staff-item p-2">
+              <div class="owl1 hiddenn w-100" >
+
+                <img src="images/multicarousal1.jpg" alt="" class="w-100" >
+              </div>
+              <br>
+              <h5>Partner's pick kinchome tool</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+              <p class="d-flex justify-content-between text-muted w-75">
+                <span><i class="px-1 fs-5 bi bi-calendar-date"></i> jan 23,2000</span>
+                <span><i class="px-1 fs-5 bi bi-person"></i>by Duly</span>
+                <span><i class="px-1 fs-5 bi bi-chat"></i>0</span>
+
+              </p>
+              <button class="multibutton p-2 px-4 ">READ MORE</button>
+
+            </div>
+
+            <div class="single-staff-item p-2">
+              <div class="owl2 hiddenn w-100" >
+
+                <img src="images/multicaurosal2.jpg" alt="" class="w-100" >
+              </div>
+              <br>
+              <h5>Partner's pick kinchome tool</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+              <p class="d-flex justify-content-between text-muted w-75">
+                <span><i class="px-1 fs-5 bi bi-calendar-date"></i> jan 23,2000</span>
+                <span><i class="px-1 fs-5 bi bi-person"></i>by Duly</span>
+                <span><i class="px-1 fs-5 bi bi-chat"></i>0</span>
+
+              </p>
+              <button class="multibutton p-2 px-4 ">READ MORE</button>
+
+            </div>
+            <div class="single-staff-item p-2">
+              <div class=" owl3 hiddenn w-100" >
+
+                <img src="images/multicaurosal3.jpg" alt="" class="w-100" >
+              </div>
+              <br>
+              <h5>Partner's pick kinchome tool</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+              <p class="d-flex justify-content-between text-muted w-75">
+                <span><i class="px-1 fs-5 bi bi-calendar-date"></i> jan 23,2000</span>
+                <span><i class="px-1 fs-5 bi bi-person"></i>by Duly</span>
+                <span><i class="px-1 fs-5 bi bi-chat"></i>0</span>
+
+              </p>
+              <button class="multibutton p-2 px-4 ">READ MORE</button>
+
+            </div>
+            <div class="single-staff-item p-2">
+              <div class="owl4 hiddenn w-100" >
+                <div>
+                  <span class="h3 fw-bolder">SUSPENSION</span><br>
+                  <span class="h4">PARTS</span><br><br>
+                  <span><a href="#">Shocks & Struts</a>,<a href="#">Air Suspension</a></span>
+                </div>
+                <img src="images/multicarousal4.jpg" alt="" class="w-100" >
+              </div>
+              <br>
+              <h5>Partner's pick kinchome tool</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+              <p class="d-flex justify-content-evenly text-muted">
+                <i class="bi bi-calendar-date"></i> jan 23,2000
+                <i class="bi bi-person"></i>by Duly
+                <i class="bi bi-chat"></i>0
+
+              </p>
+              <button class="multibutton p-3">READ more</button>
+
+            </div>
+            <div class="single-staff-item p-2">
+              <div class="owl5 hiddenn w-100" >
+                <div>
+                  <span class="h3 fw-bolder">SUSPENSION</span><br>
+                  <span class="h4">PARTS</span><br><br>
+                  <span><a href="#">Shocks & Struts</a>,<a href="#">Air Suspension</a></span>
+                </div>
+                <img src="images/multicarousal5.jpg" alt="" class="w-100" >
+              </div>
+              <br>
+              <h5>Partner's pick kinchome tool</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+              <p class="d-flex justify-content-evenly text-muted">
+                <i class="bi bi-calendar-date"></i> jan 23,2000
+                <i class="bi bi-person"></i>by Duly
+                <i class="bi bi-chat"></i>0
+
+              </p>
+              <button class="multibutton p-3">READ more</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- multi item carousal end -->
+
+  <!-- news letter subsription /////////////////////////////////////////////////////////////-->
+  <div id="newsletter" class="container-fluid  px-5 py-2">
+    <div class="row g-3 py-5">
+      <div class="col-12 col-md-6 text-center text-sm-start">
+        <h2 class="fw-bolder">Get the Latest News Delivered Daily.</h2>
+
+        <p>Give us your email and you will be daily updated with the latest events, in detail.</p>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <div class=" subcont my-3 d-flex flex-wrap justify-content-center w-100 ">
+          <div id="mailinput" class=" justify-content-start  text-start bg-white text-secondary px-2 col-12 col-sm-9 ">
+            <i class=" bi bi-envelope py-3"></i>
+            <input type="email" placeholder="enter your email " class="py-3 bg-white border-0" >
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="subbtn btn p-3 w-100 ">subscribe </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- footer///////////////////////////////////////////////////////////////////////////////-->
+
+  <!-- smfooter start -->
+
+  <div class="accordion accordion-flush d-block d-sm-none" id="accordionFlushExample2">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingtwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsetwo">
+          INFORMATION
+        </button>
+      </h2>
+      <div id="flush-collapsetwo" class="accordion-collapse collapse" aria-labelledby="flush-headingtwo"
+        data-bs-parent="#accordionFlushExample2">
+        <div class="accordion-body">
+          <div class="footer_company_info col-sm-4">
+            <img src="images/logo_4.webp" alt="logo">
+            <br>
+            <br><br>
+            <ul class="socialmedia list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <div class="socialmedia_icon">
+                    <i class="bi bi-facebook"></i>
+
+                  </div>
+                </a>
+
+              </li>
+              <li class="list-inline-item">
+                <div class="socialmedia_icon">
+                  <i class="bi bi-google"></i>
+
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="socialmedia_icon">
+                  <i class="bi bi-twitter"></i>
+
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="socialmedia_icon">
+                  <i class="bi bi-instagram"></i>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+          WHY BUY FROM US
+        </button>
+      </h2>
+      <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul class="list-unstyled footertext   ">
+            <li class="py-2  "><a href="#">Shipping and Delivary</a> </li>
+            <li class="py-2 "><a href="#">Security Payment</a> </li>
+            <li class="py-2 "><a href="#">Support</a> </li>
+            <li class="py-2  "><a href="#">Gaurentee</a></li>
+            <li class="py-2  "><a href="#">Terms and Condition</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+          INFORMATION
+        </button>
+      </h2>
+      <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul class=" list-unstyled footertext  ">
+            <li class="py-2 "><a href="#">About Us </a> </li>
+            <li class="py-2"><a href="#">Customer Service </a> </li>
+            <li class="py-2"><a href="#">Template Settings</a> </li>
+
+          </ul>
+          <ul class="list-unstyled footertext  ">
+            <li class="py-2 "><a href="#">Search Terms</a> </li>
+            <li class="py-2"><a href="#">Privacy Policy </a> </li>
+            <li class="py-2"><a href="#">Orders and Returns</a> </li>
+            <li class="py-2"><a href="#">Contact Us</a> </li>
+            <li class="py-2"><a href="#">Advanced Search</a> </li>
+            <li class="py-2"><a href="#">Newsletter Subscription</a> </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-ceneter p-2 text-muted footertext mt-5 ">© 2023 Magento Demo Store. All Rights Reserved.
+    </div>
+
+  </div>
+  <!-- smfooter ends -->
+
+  <div id="footer" class="container-fluid p-5  d-none d-sm-block">
+    <div class="row justify-content-between">
+      <div class="footer_company_info col-6 col-md-4">
+        <img src="images/logo_4.webp" alt="logo">
+        <br>
+        <br><br>
+        <ul class="socialmedia list-inline">
+          <li class="list-inline-item">
+            <a href="#">
+              <div class="socialmedia_icon">
+                <i class="bi bi-facebook"></i>
+
+              </div>
+            </a>
+
+          </li>
+          <li class="list-inline-item">
+            <div class="socialmedia_icon">
+              <i class="bi bi-google"></i>
+
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <div class="socialmedia_icon">
+              <i class="bi bi-twitter"></i>
+
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <div class="socialmedia_icon">
+              <i class="bi bi-instagram"></i>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="  footertext footer_company_info_links col-6 col-md-8">
+        <div class="col-sm-12 footer_links  ">
+          <ul class="  list-inline text-end  ">
+            <li class=" list-inline-item "><a href="#">Shipping and Delivary</a> </li>
+            <li class=" list-inline-item"><a href="#">Security Payment</a> </li>
+            <li class=" list-inline-item"><a href="#">Support</a> </li>
+            <li class=" list-inline-item "><a href="#">Gaurentee</a></li>
+            <li class=" list-inline-item "><a href="#">Terms and Condition</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 footer_links  ">
+          <ul class="  list-inline text-end">
+            <li class="list-inline-item "><a href="#">About Us </a> </li>
+            <li class="list-inline-item"><a href="#">Customer Service </a> </li>
+            <li class="list-inline-item"><a href="#">Template Settings</a> </li>
+
+          </ul>
+        </div>
+        <div class="col-sm-12 footer_links  ">
+          <ul class="list-inline text-end">
+            <li class="list-inline-item "><a href="#">Search Terms</a> </li>
+            <li class="list-inline-item"><a href="#">Privacy Policy </a> </li>
+            <li class="list-inline-item"><a href="#">Orders and Returns</a> </li>
+            <li class="list-inline-item"><a href="#">Contact Us</a> </li>
+            <li class="list-inline-item"><a href="#">Advanced Search</a> </li>
+            <li class="list-inline-item"><a href="#">Newsletter Subscription</a> </li>
+
+
+          </ul>
+        </div>
+        <div class="copyright text-end text-muted footertext mt-5 position-absolute">© 2023 Magento Demo Store. All
+          Rights Reserved.</div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+
+  <script  src="script.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+</body>
